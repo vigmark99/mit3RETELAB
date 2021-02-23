@@ -8,10 +8,6 @@ public class TrainControllerImpl implements TrainController {
 	private int referenceSpeed = 0;
 	private int speedLimit = 0;
 	private int counter=0;
-<<<<<<< HEAD
-	
-=======
->>>>>>> 3c0030bae55f3890c873f81635e9ed8ac3ba2277
 
 	@Override
 	public void followSpeed() {
