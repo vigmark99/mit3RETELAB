@@ -29,6 +29,11 @@ public class TrainControllerImpl implements TrainController {
 		counter++;
 		return referenceSpeed;
 	}
+	
+	public int getCounter()
+	{
+		return counter;
+	}
 
 	@Override
 	public void setSpeedLimit(int speedLimit) {
