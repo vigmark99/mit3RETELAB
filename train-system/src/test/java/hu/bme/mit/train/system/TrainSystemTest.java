@@ -23,6 +23,7 @@ public class TrainSystemTest {
 		user = system.getUser();
 
 		sensor.overrideSpeedLimit(50);
+
 	}
 
 	@Test
