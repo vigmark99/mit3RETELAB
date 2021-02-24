@@ -32,7 +32,6 @@ public class TrainControllerImpl implements TrainController {
 
 	public int getCounter()
 	{
-	    somethingtogetbuilderror
 		return counter;
 	}
 
