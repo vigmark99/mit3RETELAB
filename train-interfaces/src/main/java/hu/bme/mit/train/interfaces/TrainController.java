@@ -11,5 +11,7 @@ public interface TrainController {
 	void setSpeedLimit(int speedLimit);
 
 	void setJoystickPosition(int joystickPosition);
+	void tachographStore();
+	int tachographCount();
 
 }

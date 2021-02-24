@@ -31,6 +31,12 @@ public class TrainSystemTest {
 	    int i=controller.getReferenceSpeed();
 		Assert.assertEquals(1, controller.getCounter());
 	}
+	
+	@Test
+	public void Tachotest() {
+		controller.tachographStore();
+		Assert.assertEquals(1, controller.tachographCount());
+	}
 
 	@Test
 	public void OverridingJoystickPosition_IncreasesReferenceSpeed() {
