@@ -3,7 +3,8 @@ package hu.bme.mit.train.controller;
 import hu.bme.mit.train.interfaces.TrainController;
 
 import java.time.format.DateTimeFormatter;  
-import java.time.LocalDateTime;    
+import java.time.LocalDateTime;
+import com.google.common.collect;
 
 public class TrainControllerImpl implements TrainController {
 
