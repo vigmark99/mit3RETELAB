@@ -29,7 +29,7 @@ public class TrainControllerImpl implements TrainController {
 		counter++;
 		return referenceSpeed;
 	}
-
+@Override
 	public int getCounter()
 	{
 		return counter;
