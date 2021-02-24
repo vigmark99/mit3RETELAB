@@ -3,6 +3,5 @@ subprojects {
 
   repositories {
     jcenter()
-    //compile "com.google.guava:guava:16+"
   }
 }
