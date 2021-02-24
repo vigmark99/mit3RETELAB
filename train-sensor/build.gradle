@@ -1,4 +1,5 @@
 dependencies {
+	compile "com.google.guava:guava:16+"
     compile project(':train-interfaces')
     compile project(':train-user')
 
