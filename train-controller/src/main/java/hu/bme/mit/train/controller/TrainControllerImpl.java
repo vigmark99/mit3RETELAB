@@ -1,10 +1,11 @@
 package hu.bme.mit.train.controller;
 
+import com.google.common.collect.HashBasedTable;
+import com.google.common.collect.Table;
 import hu.bme.mit.train.interfaces.TrainController;
 
 import java.time.format.DateTimeFormatter;  
 import java.time.LocalDateTime;
-import com.google.common.collect;
 
 public class TrainControllerImpl implements TrainController {
 
