@@ -6,6 +6,8 @@ import hu.bme.mit.train.interfaces.TrainController;
 
 import java.time.format.DateTimeFormatter;  
 import java.time.LocalDateTime;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class TrainControllerImpl implements TrainController {
 
@@ -28,6 +30,17 @@ public class TrainControllerImpl implements TrainController {
             }
 		}
 		enforceSpeedLimit();
+	}
+	TimerTask task = new TimerTask() {
+		public void run() {
+			followSpeed();
+			cancel();
+		}
+	};
+	Timer timer= new Timer();
+	public TrainControllerImpl(){
+		long delay = 1000L;
+		timer.scheduleAtFixedRate(task, 0, 500);
 	}
 
 	@Override
@@ -56,7 +69,7 @@ public class TrainControllerImpl implements TrainController {
 	@Override
 	public void setJoystickPosition(int joystickPosition) {
 		this.step = joystickPosition;
-		
+		followSpeed();
 	}
 	@Override
 	public void tachographStore() {
