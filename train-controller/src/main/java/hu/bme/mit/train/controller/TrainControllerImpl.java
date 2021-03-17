@@ -31,9 +31,12 @@ public class TrainControllerImpl implements TrainController {
 		}
 		enforceSpeedLimit();
 	}
-	TimerTask task = new TimerTask() {
+	public TimerTask task = new TimerTask() {
+
+		public int timerCount=0;
 		public void run() {
 			followSpeed();
+			timerCount++;
 			cancel();
 		}
 	};
