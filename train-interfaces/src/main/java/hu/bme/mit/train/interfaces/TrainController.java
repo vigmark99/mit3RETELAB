@@ -14,4 +14,6 @@ public interface TrainController {
 	void tachographStore();
 	int tachographCount();
 
+	void initReferenceSpeed(int ref);
+
 }

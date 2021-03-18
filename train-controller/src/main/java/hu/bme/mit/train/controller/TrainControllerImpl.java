@@ -83,4 +83,9 @@ public class TrainControllerImpl implements TrainController {
 		return tachograph.size();
 	}
 
+	@Override
+	public void initReferenceSpeed(int ref) {
+		referenceSpeed=ref;
+	}
+
 }
